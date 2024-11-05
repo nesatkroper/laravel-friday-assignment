@@ -43,6 +43,16 @@
             *::-webkit-scrollbar {
                 display: none;
             }
+
+            @media print {
+                body * {
+                    visibility: hidden;
+                }
+                #print-content,
+                #print-content * {
+                    visibility: visible;
+                }
+            }
         </style>
     </head>
 
